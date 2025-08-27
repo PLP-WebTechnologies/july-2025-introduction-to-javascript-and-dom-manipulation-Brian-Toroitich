@@ -1,0 +1,125 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #333;
+}
+
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004080;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+.content {
+  background: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.sidebar {
+  background: #e6e6e6;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.user-input {
+  margin-top: 1rem;
+}
+.user-input input,
+.user-input button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+.card {
+  flex: 1 1 calc(25% - 1rem);
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.countdown {
+  text-align: center;
+  padding: 2rem;
+}
+#countdownDisplay {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #004080;
+}
+
+
+.site-footer {
+  text-align: center;
+  background: #004080;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr; /* Stack content & sidebar */
+  }
+  .cards .card {
+    flex: 1 1 calc(50% - 1rem); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column; /* Stack logo + nav */
+    text-align: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .cards .card {
+    flex: 1 1 100%; /* Full-width cards */
+  }
+}

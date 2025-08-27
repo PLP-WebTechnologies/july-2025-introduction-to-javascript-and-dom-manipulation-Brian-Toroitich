@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitours - JS Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Bitours</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <main class="main-layout">
+    <article class="content">
+      <h2>Welcome to Bitours</h2>
+      <p id="intro-text">
+        Explore amazing destinations, curated packages, and guided tours designed for every traveler.
+      </p>
+
+    
+      <div class="user-input">
+        <label for="name">Enter your name: </label>
+        <input type="text" id="name" placeholder="Your Name">
+        <button id="greetBtn">Greet Me</button>
+        <p id="greeting"></p>
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul id="quick-links">
+        <li>Popular Tours</li>
+        <li>Special Offers</li>
+        <li>Travel Tips</li>
+      </ul>
+      <button id="addLinkBtn">Add Random Link</button>
+    </aside>
+  </main>
+
+
+  <section class="cards">
+    <div class="card">Adventure Tours</div>
+    <div class="card">Luxury Getaways</div>
+    <div class="card">Cultural Trips</div>
+    <div class="card">Family Packages</div>
+  </section>
+
+  
+  <section class="countdown">
+    <h3>Trip Countdown</h3>
+    <button id="startCountdown">Start 60-sec Countdown</button>
+    <p id="countdownDisplay"></p>
+  </section>
+
+  
+  <footer class="site-footer">
+    <p>&copy; 2025 Bitours. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
